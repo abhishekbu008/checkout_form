@@ -1,0 +1,39 @@
+.heading-1 {
+  flex: 0 0 100%;
+  font-size: 3.6rem;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    & {
+      width: 100%;
+      order: -2;
+    }
+  }
+}
+
+.heading-2 {
+  color: var(--color-grey-2);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+
+  &--product {
+    font-size: 1.6rem;
+    color: var(--color-grey-light);
+  }
+}
+
+.heading-3 {
+  &--current {
+    color: var(--color-orange);
+    font-size: 1.6rem;
+    margin-right: 1rem;
+  }
+
+  &--past {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    padding-top: 0.5rem;
+  }
+}

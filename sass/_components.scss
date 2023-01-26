@@ -1,0 +1,210 @@
+.label {
+  font-size: 1.2rem;
+  color: var(--color-grey-2);
+  display: block;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+
+  &--half {
+    width: 100%;
+  }
+}
+
+.input {
+  padding: 1.2rem;
+  width: 46rem;
+  flex: 0 0 50%;
+  border-radius: 1rem;
+  outline: none;
+  border: 1px solid #828282;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    & {
+      width: 98%;
+    }
+  }
+
+  &:focus {
+    border-bottom: 3px solid #828282;
+  }
+
+  &::placeholder {
+    color: var(--color-grey-3);
+    font-size: 1.6rem;
+  }
+
+  &--half {
+    width: 22.5rem;
+  }
+}
+
+.country {
+  .input {
+    position: relative;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        width: 97%;
+      }
+    }
+
+    &::-webkit-calendar-picker-indicator {
+      color: var(--color-grey-3);
+      opacity: 1;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+.postal {
+  .input {
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        width: 97%;
+      }
+    }
+  }
+}
+
+.save {
+  display: flex;
+
+  .input[type="checkbox"] {
+    flex: none;
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 0 0 1rem;
+  }
+
+  .label {
+    width: 50%;
+    margin: 1rem 0rem;
+    padding-left: 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.btn {
+  width: 16rem;
+  height: 5rem;
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+
+  &:focus {
+    border: 2px solid #828282;
+  }
+}
+
+.product {
+  flex: 0 0 30%;
+  display: flex;
+  margin-top: 2rem;
+
+  &__img {
+    width: 30%;
+    height: 70%;
+    box-sizing: content-box;
+    object-fit: cover;
+    border-radius: 20%;
+    margin: 0 2rem;
+  }
+
+  .details {
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: auto;
+      margin-right: 2rem;
+    }
+
+    .price {
+      display: flex;
+      margin-bottom: 3rem;
+    }
+    .quantity {
+      display: flex;
+      justify-content: center;
+      border: 1px solid var(--color-grey-3);
+      border-radius: 1.2rem;
+
+      &__add {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4px;
+        margin: 1.5rem;
+        border: 1px solid #e0e0e0;
+        outline: none;
+        background: #e0e0e0;
+      }
+
+      &__text {
+        width: 2rem;
+        background-color: #f2f2f2;
+        text-align: center;
+        border: none;
+        outline: none;
+        color: #000;
+        margin: 1.5rem;
+      }
+
+      &__subtract {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4px;
+        margin: 1.5rem;
+        border: 1px solid #e0e0e0;
+        outline: none;
+        background: #e0e0e0;
+      }
+    }
+  }
+}
+
+.ship {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10rem;
+
+  &__1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #bdbdbd;
+  }
+
+  &__2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #bdbdbd;
+  }
+
+  &__title {
+    color: var(--color-grey-1);
+    font-size: 1.8rem;
+  }
+
+  &__total {
+    font-size: 1.4rem;
+    color: var(--color-grey-1);
+  }
+}

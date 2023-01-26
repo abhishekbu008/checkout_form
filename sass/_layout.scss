@@ -1,0 +1,72 @@
+.main-container {
+  width: 80%;
+  margin: 6rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    & {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    & {
+      width: 95%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    & {
+      width: 100%;
+    }
+  }
+
+  .contact-form {
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        width: 100%;
+        order: 1;
+      }
+    }
+
+    .half-container {
+      display: flex;
+
+      .country {
+        flex: 0 0 50%;
+      }
+
+      .postal {
+        flex: 0 0 50%;
+      }
+    }
+  }
+
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    height: 80%;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        width: 100%;
+        order: -1;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #a9a9a9;
+}
